@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Kumbh sans;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+.header .nav-bar {
+    display: flex;
+    align-items: center;
+}
+.svg {
+    display: none;
+}
+.header .nav-bar .img-sct {
+    padding-right: 3.5rem;
+}
+.header .nav-bar ul {
+    list-style: none;
+}
+.header .nav-bar ul li {
+    display: inline;
+    padding-right: 2.1rem;
+}
+.header .nav-bar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    color: hsl(219, 9%, 45%);
+    opacity: 0.7;
+}
+.header .cart-sct  {
+    display: flex;
+    align-items: center;
+}
+.header .cart-sct .img {
+    padding-left: 2.5rem;
+}
+hr {
+    margin: 0px 10rem 5rem 10rem;
+    opacity: 0.3;
+}
+.fixed-layout {
+    padding: 0 3.5rem;
+}
+.content-sct {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11rem;
+}
+.container .large-img img{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.container .images {
+    display: flex;
+}
+.container .images .small-imgs{
+   padding: 1rem 0.5rem 1rem 0;
+}
+.container .images .small-img{
+    padding: 1rem 0.58rem;
+}
+.container .images .small-img img ,.small-imgs img{
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.container .images .small-img img:hover ,.small-imgs img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.4;
+}
+.content-sct .description {
+    margin-top: 4rem;
+}
+.content-sct .description .Sneaker-company{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: hsl(26, 89%, 51%);
+    padding-bottom: 0.8rem;
+}
+.content-sct .description  h1 {
+    font-weight: bolder;
+    font-size: 38px;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+}
+.content-sct .description .text {
+    font-size: 15px;
+    line-height: 1.3rem;
+    opacity: 0.4;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.content-sct .description .price .dollar {
+    font-size: 23px;
+    font-weight: 600;
+    margin-right: 1.2rem;
+}
+.content-sct .description .price .percent {
+    color:hsl(26, 89%, 51%) ;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0.2rem 0.8rem;
+    background-color: hsl(25, 100%, 94%);
+}
+.content-sct .description .price .dollar-1 {
+   margin-top: 0.5rem;
+   font-size: 13px;
+   opacity: 0.4;
+   font-weight: 600;
+   text-decoration: line-through;
+}
+.content-sct .description .add-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.content-sct .description .add-cart .symbol {
+    padding: 1rem 0rem 1rem 1.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    background-color: hsl(223, 64%, 98%);
+}
+.content-sct .description .add-cart .symbol p{
+    display: inline;
+    padding-right: 2rem;
+}
+.content-sct .description .add-cart .symbol .sign {
+    font-weight: bolder;
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+.content-sct .description .booking {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    background-color:hsl(26, 100%, 55%) ;
+}
+.content-sct .description .booking svg {
+    padding-right: 1rem;
+}
+.content-sct .description .booking  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+@media (max-width:1300px) {
+    .fixed-layout {
+        padding: 0 2rem;
+    }
+    .content-sct {
+        padding: 0 9rem;
+    }
+}
+@media (max-width:1200px) {
+    .content-sct {
+        padding: 0 7rem;
+    }
+}
+@media (max-width:1120px) {
+    .content-sct {
+        padding: 0 4rem;
+    }
+    .header {
+        padding: 2rem 5rem;
+    }
+    hr {
+        margin: 0 4.5rem 5rem 4.5rem;
+    }
+}
+@media (max-width:1024px) {
+    .fixed-layout {
+        padding: 0 1rem;
+    }
+    .content-sct {
+        padding: 0 3.5rem;
+    }
+    .header .nav-bar ul li a {
+        font-size: 13px;
+    }
+}
+@media (max-width:992px) {
+    .header {
+        padding: 2rem 3rem ;
+    }
+    .header .nav-bar .img-sct {
+        padding-right: 2.0rem;
+    }
+    .header .nav-bar ul li {
+        padding-right: 1.5rem;
+    }
+    hr {
+        margin: 0 3.7rem 5rem 3.7rem;
+    }
+    .content-sct{
+       flex-direction: column;
+        
+    }
+    .content-sct .container .large-img img {
+        display: block;
+        margin: 0 auto;
+    }
+     .container .images {
+        justify-content: center;
+     }
+    .content-sct .description {
+        text-align: center;
+    }
+    .content-sct .description .add-cart {
+    padding: 3rem 0;
+    justify-content: center;
+    }
+}
+@media (max-width:768px) {
+    .header {
+        padding: 2rem 1rem ;
+    }
+    .header .nav-bar .img-sct {
+        padding-right: 1.5rem;
+    }
+    .header .nav-bar ul li {
+        padding-right: 0.5rem;
+    }
+    .header .cart-sct .img {
+        padding-left: 1.5rem;
+    }
+    hr {
+        margin: 0 1.2rem 5rem 1.2rem;
+    }
+}    
+@media (max-width:576px) {
+    .header {
+        padding: 2rem 1.2rem;
+    }
+    .header .nav-bar ul {
+        display: none;
+    }
+    .svg {
+        display: block;
+        margin-top: 0.3rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    hr {
+        display: none;
+    }
+    .content-sct {
+        padding: 0;
+    }
+    .fixed-layout {
+        padding: 0;
+    }
+    .content-sct .container .large-img img{
+        width: 100%;
+        height: 480px;
+        border-radius: 0;
+    }
+    .content-sct .description {
+        padding: 0 2rem;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+    .content-sct .description .Sneaker-company {
+        text-align: left;
+    }
+    .content-sct .description .add-cart {
+        padding: 0 0 2rem 0;
+        display: block;
+    }
+    .content-sct .description .add-cart .symbol {
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        border-radius: 10px;
+    }
+    .content-sct .description .booking {
+        justify-content: center;
+        border-radius: 10px;
+    }
+}
